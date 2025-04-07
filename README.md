@@ -1,4 +1,4 @@
-Below is an PowerShell script that runs the Windows Disk Cleanup (using the preset cleanup configuration) and then starts a Windows Defender quick scan. This script includes logging. the log file will be stored at C:\Logs\. 
+This is a PowerShell script that runs the Windows Disk Cleanup (using the preset cleanup configuration) and then starts a Windows Defender quick scan. This script includes logging. the log file will be stored at C:\Logs\. 
 Before using this script for automation, please ensure that you have already configured the Disk Cleanup options by running the following command once manually:
 
 cleanmgr.exe /sageset:1
@@ -20,4 +20,3 @@ To automate this script on a regular basis, consider scheduling it using Windows
 - Customizing the Scan:
 If you’d like to run a full scan instead of a quick scan, change the -ScanType parameter in the Start-MpScan cmdlet from QuickScan to FullScan. Note that a full scan may take significantly longer.
 
-This script serves as a solid starting point for automating routine system maintenance on Windows 11. Let me know if you’d like to delve deeper into any of these enhancements or explore more detailed scheduling and logging options!
